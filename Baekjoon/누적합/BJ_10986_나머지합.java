@@ -4,7 +4,7 @@ import java.util.*;
 public class BJ_10986_나머지합 {
 
 	// 누적합 + 아이디어 문제
-	// sum(i,j)가 M으로 나누어 떨어지려면 sum[j]%M - sum[i-1]%M 이면되고 sum[j]%M = sum[i]%M 이어야 함(즉 2개이상)
+	// sum(i,j)가 M으로 나누어 떨어지려면 sum[j]%M - sum[i-1]%M = 0 이면되고 sum[j]%M = sum[i]%M 이어야 함(즉 2개 이상)
 	// 그러나 0인경우는 자기자신이 떨어지는 경우가 있기때문에 추가로 세주어야 함
 	// 그 외에는 2이상이면 combination 공식 사용해서 개수 추가
 	public static void main(String[] args) throws IOException {
